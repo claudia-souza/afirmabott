@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Ações Afirmativas - IFCE</title>
+    <link rel="icon" href="https://images.seeklogo.com/logo-png/43/3/ifpr-instituto-federal-do-parana-icone-logo-png_seeklogo-433894.png">
+</head>
+<body>
+    <!-- Cabeçalho com Menu -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="https://sistemas.tiangua.ifce.edu.br/clima/images/logo_instituto_new.png" class="logo">
+                <ul class="menu">
+                    <li><a href="index.html">Inicial</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="conteudos.html">Conteúdos Úteis</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Seção Principal -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contatos</h1>
+            <p>Promovendo igualdade de acesso à educação</p>
+        </div>
+    </section>
+    
+    <!-- Seção de Informações com Imagens -->
+    <section class="info">
+        <div class="container">
+            <div class="info-section">
+                <h3>Fale conosco</h3>
+                <p>Tire suas dúvidas com nosso assistente virtual! Ele está localizado no canto inferior da página!</p>
+                <p><strong>Para mais informações, entre em contato pelos canais:</strong></p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png">leonardo.chagas@ifce.edu.br</p>
+                <p><strong>Para falar com os desenvolvedores:</strong></p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png">raquel_silveira@ifce.edu.br</p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png">thalita.rodrigues.reis08@aluno.ifce.edu.br</p>   
+            </div>           
+    </section>
+   
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-icon="https://cdn-icons-png.flaticon.com/128/3070/3070654.png"
+    chat-title="AfirmaBotTeste"
+    agent-id="42ad2ab5-0865-41bf-b018-ace93d245b5f"
+    language-code="pt-br"
+    ></df-messenger>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IFCE - Instituto Federal do Ceará. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!--Plugin Acessibilidade-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Ações Afirmativas - IFCE</title>
+    <link rel="icon" href="https://images.seeklogo.com/logo-png/43/3/ifpr-instituto-federal-do-parana-icone-logo-png_seeklogo-433894.png">
+</head>
+<body>
+    <!-- Cabeçalho com Menu -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="https://sistemas.tiangua.ifce.edu.br/clima/images/logo_instituto_new.png" class="logo">
+                <ul class="menu">
+                    <li><a href="index.html">Inicial</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="conteudos.html">Conteúdos Úteis</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Seção Principal -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sobre Nós</h1>
+            <p>Promovendo igualdade de acesso à educação</p>
+        </div>
+    </section>
+    
+    <!-- Seção de Informações com Imagens -->
+    <section class="info">
+        <div class="container">
+            <div class="info-section">
+                <h3>Equipe de Pesquisa</h3>
+                <p>Para ampliar o acesso a informações claras sobre a Lei de Cotas e o Processo de Heteroidentificação no IFCE, 
+                evitando inseguranças ou dificuldades no ingresso à educação, foi desenvolvido um chatbot educativo e interativo.</p>
+                <p>Este produto educacional integra o Programa de Mestrado Profissional em Educação Profissional e 
+                Tecnológica (ProfEPT) e foi idealizado pelo mestrando e membro da banca de heteroidentificação do 
+                IFCE Campus Tianguá, Leonardo Chagas, com a participação e colaboração da Professora Doutora Raquel Silveira 
+                e da discente bolsista PIBIC-AF Thalita Reis.</p>
+
+                <p>O chatbot tem como objetivo apoiar a comunidade interna e externa do IFCE Campus Tianguá na 
+                compreensão de:</p>
+
+                <p><b>O que é a Lei de Cotas e como ela funciona;</b></p>
+
+                <p><b>Os diferentes tipos de cotas disponíveis no IFCE;</b></p>
+
+                <p><b>O funcionamento do processo de heteroidentificação.</b></p>
+
+                <p>O conteúdo foi construído com o apoio dos membros da banca de heteroidentificação do IFCE 
+                Campus Tianguá, assegurando informações precisas, confiáveis e atualizadas. O acesso é simples, 
+                intuitivo e rápido, proporcionando uma experiência educativa que promove a inclusão e fortalece 
+                o direito de todos à informação de forma descomplicada.</p>
+                <img src="https://img.freepik.com/premium-photo/business-people-stacking-hands-middle_53876-139119.jpg?uid=R204678232&ga=GA1.1.812807399.1750192279&semt=ais_hybrid&w=740" alt="Sobre nós" class="info-image">
+            </div>           
+    </section>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-icon="https://cdn-icons-png.flaticon.com/128/3070/3070654.png"
+    chat-title="AfirmaBotTeste"
+    agent-id="42ad2ab5-0865-41bf-b018-ace93d245b5f"
+    language-code="pt-br"
+    ></df-messenger>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IFCE - Instituto Federal do Ceará. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!--Plugin Acessibilidade-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+</body>
+</html>
+
+
+
