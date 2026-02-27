@@ -168,7 +168,7 @@ df-messenger {
 
   /* Tamanho padrão */
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: 70vh;
 
   /* Cores para a interface do chatbot */
@@ -188,14 +188,16 @@ df-messenger {
   --df-messenger-chip-border-color: #2e7d32;
   --df-messenger-chip-color: #2e7d32;
 }
+/*
 df-messenger {
-  transform: scale(1.1); /* aumenta 10% */
+  transform: scale(1.1); 
   transform-origin: bottom right;
 }
 df-messenger::part(fab) {
   width: 72px;
   height: 72px;
 }
+*/
 df-messenger::part(fab-icon) {
   width: 36px;
   height: 36px;
