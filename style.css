@@ -189,7 +189,7 @@ df-messenger {
   --df-messenger-chip-color: #2e7d32;
 }
 df-messenger {
-  transform: scale(1.2); /* aumenta 20% */
+  transform: scale(1.1); /* aumenta 10% */
   transform-origin: bottom right;
 }
 df-messenger::part(fab) {
