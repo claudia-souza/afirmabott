@@ -159,6 +159,7 @@ footer {
 
 /* ============================= */
 /* Estilos específicos para o chatbot Dialogflow Messenger */
+
 df-messenger {
   z-index: 999;
   position: fixed;
@@ -167,23 +168,37 @@ df-messenger {
 
   /* Tamanho padrão */
   width: 100%;
-  max-width: 400px;
-  height: 70vh;
+  max-width: 600px;
+  height: 85vh;
 
   /* Cores para a interface do chatbot */
-  --df-messenger-button-titlebar-color: #2e7d32;
-  --df-messenger-bot-message: #d7fcdb;
-  --df-messenger-chat-background-color: transparent;
-  --df-messenger-font-color: #0c0c0c;
-  --df-messenger-send-icon: #2b9438;
-  --df-messenger-input-box-color: white;
+  --df-messenger-button-titlebar-color: #1b5e20; /*parte do nome ( afirmabot */
+  --df-messenger-bot-message: #d7fcdb; /* cor do balão*/
+  --df-messenger-chat-background-color: white; /* cor defundo*/
+  --df-messenger-font-color: black; /*cor da letra do chat*/
+  --df-messenger-send-icon: #1b5e20; /* cord do aviaozinho*/
+  --df-messenger-input-box-color: white; /* cor da parte onde digito*/
 
-  --df-messenger-bot-message-background-color: #e0e0e0;
-  --df-messenger-bot-message-font-color: #333333;
+  --df-messenger-bot-message-font-color: #d2df24; /* cor do aviao por cima*/
   --df-messenger-user-message-background-color: #2e7d32;
   --df-messenger-user-message-font-color: white;
+  --df-messenger-minimized-chat-close-icon-color: #1b5e20;
 
-  --df-messenger-minimized-chat-close-icon-color: #2e7d32;
+  --df-messenger-chip-background: #ffffff;
+  --df-messenger-chip-border-color: #2e7d32;
+  --df-messenger-chip-color: #2e7d32;
+}
+df-messenger {
+  transform: scale(1.2); /* aumenta 20% */
+  transform-origin: bottom right;
+}
+df-messenger::part(fab) {
+  width: 72px;
+  height: 72px;
+}
+df-messenger::part(fab-icon) {
+  width: 36px;
+  height: 36px;
 }
 
 /* Responsividade */
