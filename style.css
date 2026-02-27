@@ -168,8 +168,8 @@ df-messenger {
 
   /* Tamanho padrão */
   width: 100%;
-  max-width: 600px;
-  height: 85vh;
+  max-width: 500px;
+  height: 70vh;
 
   /* Cores para a interface do chatbot */
   --df-messenger-button-titlebar-color: #1b5e20; /*parte do nome ( afirmabot */
