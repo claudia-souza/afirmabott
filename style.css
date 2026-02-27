@@ -203,6 +203,28 @@ df-messenger::part(fab-icon) {
   height: 36px;
 }
 
+/*test*/
+@media (min-width: 1024px) {
+  df-messenger::part(chat) {
+    width: 100%;
+    max-width: 600px;
+    height: 85vh;
+  }
+  df-messenger {
+    transform: scale(1.1);
+  }
+
+  df-messenger::part(fab) {
+    width: 72px;
+    height: 72px;
+  }
+
+  df-messenger::part(fab-icon) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   nav {
