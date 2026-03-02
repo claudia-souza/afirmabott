@@ -13,16 +13,51 @@ body {
 }
 
 /* Cabeçalho */
+/* Cabeçalho Ampliado */
 header {
-  background-color: #2e7d32; /* Verde */
-  padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Mantendo o gradiente que você gostou */
+  background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
+
+  /* AUMENTO AQUI: 60px no topo/base e 0 nas laterais */
+  padding: 60px 0;
+
+  /* Mantendo o detalhe em amarelo do IF */
+  border-bottom: 4px solid #ffcc00;
+
+  /* Removendo qualquer margem que possa criar a linha branca indesejada */
+  margin-bottom: 0;
 }
 
+/* Ajuste da Logo para acompanhar o tamanho */
+/* Cabeçalho Ampliado */
+header {
+  /* Mantendo o gradiente que você gostou */
+  background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
+
+  /* AUMENTO AQUI: 60px no topo/base e 0 nas laterais */
+  min-height: 140px; /* ⬅️ deixa o verde mais “grosso” */
+  padding: 60px 0;
+  /* Mantendo o detalhe em amarelo do IF */
+  border-bottom: 4px solid #ffcc00;
+
+  /* Removendo qualquer margem que possa criar a linha branca indesejada */
+  margin-bottom: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ajuste da Logo para acompanhar o tamanho */
+.logo {
+  width: 350px; /* Aumentei um pouco para não sumir no header grande */
+  height: auto;
+}
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.menu li a {
+  padding: 10px 16px;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -54,14 +89,14 @@ nav {
   transition: color 0.3s;
   font-size: 1.2rem;
 }
-
 .menu a:hover {
-  color: #ffeb3b;
+  color: #ffcc00; /* Amarelo do IF ao passar o mouse */
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4); /* Brilho sutil */
 }
 
 /* Seção Hero */
 .hero {
-  background-color: #2e7d32;
+  background-color: #2d823e;
   color: white;
   padding: 3rem 0;
   text-align: center;
@@ -85,9 +120,11 @@ nav {
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
-
-.info-section h3 {
-  color: #2e7d32;
+.info-section p {
+  text-align: justify;
+}
+.info-section h2 {
+  color: #2d823e;
   margin-bottom: 1rem;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.5rem;
@@ -101,7 +138,23 @@ nav {
   margin-top: 1.5rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+/* Caixa do chatbot */
+.info-box {
+  background: #e8f5e9;
+  border-left: 5px solid #2e7d32;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
 
+/* Itens de contato */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
 /* Ícones */
 img {
   width: 15px;
@@ -150,7 +203,7 @@ img {
 
 /* Rodapé */
 footer {
-  background-color: #2e7d32;
+  background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
   color: white;
   text-align: center;
   padding: 2rem 0;
