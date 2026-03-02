@@ -14,40 +14,19 @@ body {
 
 /* Cabeçalho */
 /* Cabeçalho Ampliado */
-header {
-  /* Mantendo o gradiente que você gostou */
-  background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
 
-  /* AUMENTO AQUI: 60px no topo/base e 0 nas laterais */
-  padding: 60px 0;
-
-  /* Mantendo o detalhe em amarelo do IF */
-  border-bottom: 4px solid #ffcc00;
-
-  /* Removendo qualquer margem que possa criar a linha branca indesejada */
-  margin-bottom: 0;
-}
-
-/* Ajuste da Logo para acompanhar o tamanho */
 /* Cabeçalho Ampliado */
 header {
-  /* Mantendo o gradiente que você gostou */
   background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
-
-  /* AUMENTO AQUI: 60px no topo/base e 0 nas laterais */
-  min-height: 140px; /* ⬅️ deixa o verde mais “grosso” */
+  min-height: 140px;
   padding: 60px 0;
-  /* Mantendo o detalhe em amarelo do IF */
   border-bottom: 4px solid #ffcc00;
-
-  /* Removendo qualquer margem que possa criar a linha branca indesejada */
   margin-bottom: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Ajuste da Logo para acompanhar o tamanho */
 .logo {
-  width: 350px; /* Aumentei um pouco para não sumir no header grande */
+  width: 350px;
   height: auto;
 }
 .container {
@@ -91,7 +70,7 @@ nav {
 }
 .menu a:hover {
   color: #ffcc00; /* Amarelo do IF ao passar o mouse */
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4); /* Brilho sutil */
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
 }
 
 /* Seção Hero */
@@ -229,7 +208,7 @@ df-messenger {
   --df-messenger-bot-message: #d7fcdb; /* cor do balão*/
   --df-messenger-chat-background-color: white; /* cor defundo*/
   --df-messenger-font-color: black; /*cor da letra do chat*/
-  --df-messenger-send-icon: #1b5e20; /* cord do aviaozinho*/
+  --df-messenger-send-icon: #1b5e20; /* card do aviaozinho*/
   --df-messenger-input-box-color: white; /* cor da parte onde digito*/
 
   --df-messenger-bot-message-font-color: #d2df24; /* cor do aviao por cima*/
