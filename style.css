@@ -234,6 +234,7 @@ df-messenger::part(fab-icon) {
   width: 36px;
   height: 36px;
 }
+/*Testando formas de acessibilidade (encontrar visualmente o chat(*/
 
 /*test*/
 @media (min-width: 1024px) {
