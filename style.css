@@ -20,7 +20,6 @@ header {
   background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
   min-height: 140px;
   padding: 60px 0;
-  border-bottom: 4px solid #ffcc00;
   margin-bottom: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -184,9 +183,11 @@ img {
 footer {
   background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
   color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   padding: 2rem 0;
-  margin-top: 2rem;
 }
 
 /* ============================= */
@@ -220,21 +221,27 @@ df-messenger {
   --df-messenger-chip-border-color: #2e7d32;
   --df-messenger-chip-color: #2e7d32;
 }
-/*
+
 df-messenger {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transform-origin: bottom right;
 }
 df-messenger::part(fab) {
   width: 72px;
   height: 72px;
 }
-*/
-df-messenger::part(fab-icon) {
-  width: 36px;
-  height: 36px;
+*/ df-messenger::part(fab-icon) {
+  width: 40px;
+  height: 40px;
 }
 /*Testando formas de acessibilidade (encontrar visualmente o chat(*/
+df-messenger::part(fab) {
+  animation: pulse 2s infinite;
+}
+
+df-messenger::part(fab) {
+  animation: bounce 2s infinite;
+}
 
 /*test*/
 @media (min-width: 1024px) {
