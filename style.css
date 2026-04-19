@@ -122,14 +122,13 @@ details[open] {
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.5rem;
 }
-
 .info-image {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+  aspect-ratio: 16/9;
   border-radius: 8px;
   margin-top: 1.5rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 /* Caixa do chatbot */
 .info-box {
