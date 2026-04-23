@@ -257,15 +257,33 @@ df-messenger::part(fab) {
   width: 40px;
   height: 40px;
 }
-/*Testando formas de acessibilidade (encontrar visualmente o chat(*/
-df-messenger::part(fab) {
-  animation: pulse 2s infinite;
+
+@keyframes shake-bot {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  10% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  15% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  20% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-df-messenger::part(fab) {
-  animation: bounce 2s infinite;
+df-messenger {
+  animation: shake-bot 3s ease-in-out infinite !important;
+  display: block !important;
+  transform-origin: bottom right !important;
 }
-
 /*test*/
 @media (min-width: 1024px) {
   df-messenger::part(chat) {
