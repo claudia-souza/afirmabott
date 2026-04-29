@@ -248,30 +248,6 @@ df-messenger {
   --df-messenger-chip-border-color: #2e7d32;
   --df-messenger-chip-color: #2e7d32;
 }
-/* Força o fundo branco na janela interna do chat */
-df-messenger::part(chat-window) {
-  background-color: #ffffff !important;
-  background: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* Força o fundo na lista de mensagens */
-df-messenger::part(message-list) {
-  background-color: #ffffff !important;
-  background: #ffffff !important;
-}
-
-/* Força o fundo na barra de digitação inferior */
-df-messenger::part(text-field) {
-  background-color: #ffffff !important;
-}
-
-df-messenger {
-  z-index: 9999;
-  opacity: 1 !important;
-  filter: none !important;
-  --df-messenger-chat-background-color: #ffffff;
-}
 df-messenger::part(fab) {
   width: 72px;
   height: 72px;
