@@ -13,11 +13,30 @@ body {
 }
 
 /* Cabeçalho */
-/* Cabeçalho Ampliado */
+/* menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 5px 0;
+  background: #fff;
+  border-radius: 2px;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
 
 /* Cabeçalho Ampliado */
 header {
-  background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
+  background: linear-gradient(135deg, #06402b 0%);
   min-height: 140px;
   padding: 60px 0;
   margin-bottom: 0;
@@ -74,7 +93,7 @@ nav {
 
 /* Seção Hero */
 .hero {
-  background-color: #2d823e;
+  background-color: #06402b;
   color: white;
   padding: 3rem 0;
   text-align: center;
@@ -117,7 +136,7 @@ details[open] {
   text-align: justify;
 }
 .info-section h2 {
-  color: #2d823e;
+  color: #06402b;
   margin-bottom: 1rem;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.5rem;
@@ -208,7 +227,7 @@ img {
 
 /* Rodapé */
 footer {
-  background: linear-gradient(135deg, #2d823e 0%, #1a4a21 100%);
+  background: linear-gradient(135deg, #06402b);
   color: white;
   bottom: 0;
   left: 0;
@@ -232,25 +251,25 @@ df-messenger {
   height: 70vh;
 
   /* Cores para a interface do chatbot */
-  --df-messenger-button-titlebar-color: #1b5e20; /*parte do nome ( afirmabot */
+  --df-messenger-button-titlebar-color: #06402b; /*parte do nome ( afirmabot */
   --df-messenger-bot-message: #d7fcdb; /* cor do balão*/
   --df-messenger-chat-background-color: white; /* cor defundo*/
   --df-messenger-font-color: black; /*cor da letra do chat*/
-  --df-messenger-send-icon: #1b5e20; /* card do aviaozinho*/
+  --df-messenger-send-icon: #06402b; /* card do aviaozinho*/
   --df-messenger-input-box-color: white; /* cor da parte onde digito*/
 
   --df-messenger-bot-message-font-color: #d2df24; /* cor do aviao por cima*/
-  --df-messenger-user-message-background-color: #2e7d32;
+  --df-messenger-user-message-background-color: #06402b;
   --df-messenger-user-message-font-color: white;
-  --df-messenger-minimized-chat-close-icon-color: #1b5e20;
+  --df-messenger-minimized-chat-close-icon-color: #06402b;
 
   --df-messenger-chip-background: #ffffff;
-  --df-messenger-chip-border-color: #2e7d32;
-  --df-messenger-chip-color: #2e7d32;
+  --df-messenger-chip-border-color: #06402b;
+  --df-messenger-chip-color: #06402b;
 }
 /* Fix para a barra de título transparente */
 df-messenger::part(titlebar) {
-  background-color: #1b5e20 !important;
+  background-color: #06402b !important;
   opacity: 1 !important;
   border-radius: 8px 8px 0 0;
 }
@@ -263,7 +282,7 @@ df-messenger::part(fab) {
   width: 72px;
   height: 72px;
 }
-*/ df-messenger::part(fab-icon) {
+df-messenger::part(fab-icon) {
   width: 40px;
   height: 40px;
 }
@@ -291,17 +310,58 @@ df-messenger::part(fab) {
 }
 /* Responsividade Corrigida */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
+  header {
+    padding: 30px 0;
   }
 
-  .menu {
-    flex-direction: column;
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
   }
 
+  .logo {
+    width: 220px;
+    max-width: 70%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu.aberto {
+    display: flex;
+  }
+
   .menu li {
-    margin: 0.5rem 0;
+    margin: 0;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 14px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Hambúrguer vira "X" quando aberto */
+  .menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .hero h1 {

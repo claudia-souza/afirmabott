@@ -10,17 +10,27 @@
 <body>
     <!-- Cabeçalho com Menu -->
     <header>
-        <div class="container">
-            <nav>
-                <img src="image/logo_instituto_new.png" class="logo">
-                <ul class="menu">
-                    <li><a href="index.html">Inicial</a></li>
-                    <li><a href="sobrenos.html">Sobre Nós</a></li>
-                    <li><a href="conteudos.html">Conteúdos Úteis</a></li>
-                    <li><a href="contato.html">Suporte</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+  <img src="image/logo_instituto_new.png" class="logo" alt="Instituto Federal Ceará, Campus Tianguá" />
+
+  <button
+  class="menu-toggle"
+  aria-label="Abrir menu"
+  onclick="document.getElementById('menu').classList.toggle('aberto'); this.classList.toggle('ativo');"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+  <ul class="menu" id="menu">
+    <li><a href="index.html">Inicial</a></li>
+    <li><a href="sobrenos.html">Sobre Nós</a></li>
+    <li><a href="conteudos.html">Conteúdos Úteis</a></li>
+  </ul>
+</nav>
+      </div>
     </header>
     
     <!-- Seção Principal 
@@ -58,7 +68,38 @@
                 intuitivo e rápido, proporcionando uma experiência educativa que promove a inclusão e fortalece 
                 o direito de todos à informação de forma descomplicada.</p>
                 <img src="https://img.freepik.com/premium-photo/business-people-stacking-hands-middle_53876-139119.jpg?uid=R204678232&ga=GA1.1.812807399.1750192279&semt=ais_hybrid&w=740" alt="Sobre nós" class="info-image">
-            </div>           
+            </div>  
+            
+            <div class="info-section">
+          <h2>Informações gerais</h2> 
+          <h4>Membro da banca de heteroidentificação</h4> 
+          <p class="contact-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png"
+            />
+            leonardo.chagas@ifce.edu.br
+          </p>
+
+          <h4> Equipe de desenvolvimento </h4>
+          <p class="contact-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png"
+            />
+            claudia.ferreira07@aluno.ifce.edu.br
+          </p>
+          <p class="contact-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png"
+            />
+            raquel_silveira@ifce.edu.br
+          </p>
+          <p class="contact-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png"
+            />
+            thalita.rodrigues.reis08@aluno.ifce.edu.br
+          </p>
+        </div>
     </section>
 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>

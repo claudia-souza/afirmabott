@@ -12,20 +12,27 @@
   </head>
   <body>
     <!-- Cabeçalho com Menu -->
-    <header>
+     <header>
       <div class="container">
         <nav>
-          <img
-           src="image/logo_instituto_new.png"
-            class="logo"
-          />
-          <ul class="menu">
-            <li><a href="index.html">Inicial</a></li>
-            <li><a href="sobrenos.html">Sobre Nós</a></li>
-            <li><a href="conteudos.html">Conteúdos Úteis</a></li>
-            <li><a href="contato.html">Suporte</a></li>
-          </ul>
-        </nav>
+  <img src="image/logo_instituto_new.png" class="logo" alt="Instituto Federal Ceará, Campus Tianguá" />
+
+  <button
+  class="menu-toggle"
+  aria-label="Abrir menu"
+  onclick="document.getElementById('menu').classList.toggle('aberto'); this.classList.toggle('ativo');"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+  <ul class="menu" id="menu">
+    <li><a href="index.html">Inicial</a></li>
+    <li><a href="sobrenos.html">Sobre Nós</a></li>
+    <li><a href="conteudos.html">Conteúdos Úteis</a></li>
+  </ul>
+</nav>
       </div>
     </header>
 
